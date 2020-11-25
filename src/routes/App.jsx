@@ -7,19 +7,22 @@ import Information from '../containers/Information';
 import Payments from '../containers/Payments';
 import Success from '../containers/Success';
 import NotFound from '../containers/NotFound';
+import Layout from '../components/Layout';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/checkout" component={Checkout} />
-        <Route exact path="/checkout/information" component={Information} />
-        <Route exact path="/checkout/payment" component={Payments} />
-        <Route exact path="/checkout/success" component={Success} />
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/checkout" component={Checkout} />
+          <Route exact path="/checkout/information" component={Information} />
+          <Route exact path="/checkout/payment" component={Payments} />
+          <Route exact path="/checkout/success" component={Success} />
 
-        <Route component={NotFound} />
-      </Switch>
+          <Route component={NotFound} />
+        </Switch>
+      </Layout>
     </BrowserRouter>
   );
 };
