@@ -7,7 +7,7 @@ const Product = ({ product, handleAddToCart }) => {
       <div className="Product-item-info">
         <h2>
           {product.title}
-          <span>$ {product.price} _</span>
+          <span>$ {product.price}</span>
         </h2>
         <p>{product.description}</p>
       </div>
