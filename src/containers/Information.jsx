@@ -54,7 +54,7 @@ const Information = () => {
           </div>
           <div className="Information-next">
             <button type="button" onClick={handleSubmit}>
-              Pagar{' '}
+              Pagar
             </button>
           </div>
         </div>
