@@ -4,8 +4,8 @@ import AppContext from '../context/AppContext';
 import '../styles/components/Payment.css';
 
 const Payment = ({ history }) => {
-  const { state } = useContext(AppContext);
-  const { cart, buyer, addNewOrder } = state;
+  const { state, addNewOrder } = useContext(AppContext);
+  const { cart, buyer } = state;
 
   const paypalOptions = {
     clientId:
